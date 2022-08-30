@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movieligent
 
-## Getting Started
+[https://movieligent.blntrsz.com/](https://movieligent.blntrsz.com/)
 
-First, run the development server:
+The task is to create a simple Typescript React UI that has an input box. Upon pressing a button, it queries movies using the value of the input, through an external api and displays the results in a list.
+
+## Prerequisite
+
+- Node: 16.13.0
+- pnpm: 7.9.3
+- install in root directory with `pnpm`
+
+## Run the application in dev mode
 
 ```bash
-npm run dev
-# or
-yarn dev
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application will be started in `http://localhost:3000`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Run unit tests
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+pnpm test
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Run e2e tests
 
-## Learn More
+```bash
+pnpm e2e
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Run all tests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm test:all
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Run lint
 
-## Deploy on Vercel
+```bash
+pnpm lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## CI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Results can be found in: [https://github.com/blntrsz/movieligent/actions](https://github.com/blntrsz/movieligent/actions)
+
+CI configuration can be found in: [https://github.com/blntrsz/movieligent/blob/main/.github/workflows/main.yml](https://github.com/blntrsz/movieligent/blob/main/.github/workflows/main.yml)
